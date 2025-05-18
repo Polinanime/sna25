@@ -78,7 +78,7 @@ Overall, we think we've succeeded in making this project. Our application works 
 
 It's worth noting, however, that we've also faced challenges. The most important of them is the fact that we needed to glue together other people's works, which is done much easier when you have written the code yourself and know all its inner details.
 
-The expereince we've gained while developing this project is undoubtedly going to be valuable to us in our future careers. The project has made us more proficient using Git, Docker, GitHub Actions, and even tools from the Go and JavaScript development ecosystems.
+The expereince we've gained while developing this project is undoubtedly going to be valuable to us in our future careers. The project has made us more proficient in Git, Docker, GitHub Actions, and even tools from the Go and JavaScript development ecosystems.
 
 Our work is published here:
 
