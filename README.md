@@ -1,5 +1,6 @@
 # Group Project Assignment
 
+![Golangci-lint](https://github.com/Polinanime/sna25/actions/workflows/backend-lint.yml/badge.svg)
 ![ESLint](https://github.com/Polinanime/sna25/actions/workflows/eslint.yml/badge.svg)
 
 [S25] System and Network Administration / Innopolis University
@@ -15,14 +16,26 @@
 
 ## Social Blogging Site
 
-...
+Conduit (the app name) allows you to read articles made by other users and even
+publish your own! You can think of it as a [Medium](https://medium.com) clone.
+
+The application is available on the web. Follow this link to use it:
+http://88.218.62.21:80.
 
 ### Build Instructions
 
-...
+To launch a development server, you can use the following
+[shell script](/scripts/run-dev.sh):
 
 ```shell
-docker compose up --build
+scripts/run-dev.sh
+```
+
+Alternatively, you may simply launch the
+[development Compose file](/compose.dev.yml):
+
+```shell
+docker compose --file=compose.dev.yml up --build
 ```
 
 ### Acknowledgements
@@ -32,7 +45,7 @@ software applications rather than the arcitectural side of building software
 with code. For this reason, we&CloseCurlyQuote;ve decided not to reinvent the
 wheel and build upon an existing open source foundation.
 
-The project idea is taken from the
+The project idea has been taken from the
 [RealWorld](https://realworld-docs.netlify.app/) project&mdash;a specification
 for a social blogging website used for (a) learning to build
 &OpenCurlyDoubleQuote;real world&CloseCurlyDoubleQuote;-size applications (b)
