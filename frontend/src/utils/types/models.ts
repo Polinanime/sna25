@@ -35,7 +35,7 @@ export const ArticlePreview = Article.omit({ body: true, updatedAt: true });
 export type ArticlePreview = z.infer<typeof ArticlePreview>;
 
 export const Comment = z.object({
-  id: z.string(),
+  id: z.coerce.string(),
   createdAt: z.coerce.date(),
   updatedAt: z.coerce.date(),
   body: z.string(),
