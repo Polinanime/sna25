@@ -21,15 +21,11 @@
 #table(
   columns: 3,
   [Mikhail Panteleev],
-  [#link("mailto:m.panteleev@innopolis.university")[#text(
-        fill: blue,
-      )[m.panteleev\@innopolis.university]]],
+  [#link("mailto:m.panteleev@innopolis.university")[#text(fill: blue)[m.panteleev\@innopolis.university]]],
   [B23-SD-01],
 
   [Asqar Arslanov],
-  [#link("mailto:a.arslanov@innopolis.university")[#text(
-        fill: blue,
-      )[a.arslanov\@innopolis.university]]],
+  [#link("mailto:a.arslanov@innopolis.university")[#text(fill: blue)[a.arslanov\@innopolis.university]]],
   [B23-SD-01],
 )
 
@@ -57,7 +53,7 @@ The back end is written in Go with Fiber. It uses PostgreSQL as the DBMS. The fr
 #align(center)[
   The diagram below illustrates the main components of our application:
 
-  #block(height: 168pt)[#image("assets/diagram.svg")]
+  #block(height: 168pt)[#image("assets/diagram.png")]
 ]
 
 #pagebreak()
@@ -70,7 +66,7 @@ We've managed to get everything to work with Docker, which makes it easier to la
 docker compose --file=compose.dev.yml up --build
 ```
 
-As part of our CI/CD pipeline, we assess quality of our code using static analysis tools.
+In our CI/CD pipeline, we assess quality of our code using static analysis tools and upload images to DockerHub.
 
 The back end code is analyzed with #link("https://golangci-lint.run/")[#text(fill: blue)[`golangci-lint`]]. Also, for code style consistency, everything is formatted with #link("https://github.com/mvdan/gofumpt")[#text(fill: blue)[`gofumpt`]]. The front end uses #link("https://eslint.org/")[#text(fill: blue)[ESLint]] for linting and avoiding common mistakes. The code is formatted with #link("https://prettier.io/")[#text(fill: blue)[Prettier]] (default config).
 
@@ -86,6 +82,8 @@ The expereince we've gained while developing this project is undoubtedly going t
 
 Our work is published here:
 
-- Repository: #link("https://github.com/Polinanime/sna25")[#text(fill: blue)[github.com/Polinanime/sna25]]
+- Repository: #text(fill: blue)[https://github.com/Polinanime/sna25]
 - Deployed application: #text(fill: blue)[http://88.218.62.21:80]
 - Demo video: #text(fill: blue)[https://drive.google.com/drive/folders/1n5J5gUqOt6WDojwb-Eul0Ib4ZJ_c71Vw]
+- Back end image: #text(fill: blue)[https://hub.docker.com/r/polinaanime/sna25-backend]
+- Front end image: #text(fill: blue)[https://hub.docker.com/r/polinaanime/sna25-frontend]
