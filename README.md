@@ -49,8 +49,8 @@ wheel and build upon an existing open source foundation.
 The project idea has been taken from the
 [RealWorld](https://realworld-docs.netlify.app/) project&mdash;a specification
 for a social blogging website used for (a) learning to build
-&OpenCurlyDoubleQuote;real world&CloseCurlyDoubleQuote;-size applications (b)
-demonstrating capabilities of new technologies.
+&OpenCurlyDoubleQuote;real world&CloseCurlyDoubleQuote;&ndash;size applications
+(b) demonstrating capabilities of new technologies.
 
 The code for the back end has mostly been taken from
 [alpody/golang-fiber-realworld-example-app](https://github.com/alpody/golang-fiber-realworld-example-app).
