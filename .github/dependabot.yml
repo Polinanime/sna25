@@ -1,40 +1,40 @@
 version: 2
 updates:
   - package-ecosystem: "gomod"
-    directory: "/backend" 
+    directory: "/backend"
     schedule:
       interval: "daily"
     labels:
-    - "dependency golang"
-    - "backend"
+      - "dependency golang"
+      - "backend"
 
   - package-ecosystem: "npm"
     directory: "/frontend"
     schedule:
       interval: "weekly"
     labels:
-    - "dependency npm"
-    - "frontend"
-    
+      - "dependency npm"
+      - "frontend"
+
   - package-ecosystem: "docker"
     directory: "/backend"
     schedule:
       interval: "daily"
-    labels: 
-    - "dependency docker"
-    - "backend"
+    labels:
+      - "dependency docker"
+      - "backend"
 
   - package-ecosystem: "docker"
     directory: "/frontend"
     schedule:
       interval: "daily"
-    labels: 
-    - "dependency docker"
-    - "frontend"
-    
+    labels:
+      - "dependency docker"
+      - "frontend"
+
   - package-ecosystem: "github-actions"
     directory: "/"
-    schedule: 
+    schedule:
       interval: "weekly"
-    labels: 
-    - "dependency gh-action"
+    labels:
+      - "dependency gh-action"
