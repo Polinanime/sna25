@@ -38,10 +38,10 @@ scripts/run-dev.sh
 ```
 
 Alternatively, you may simply launch the
-[development Compose file](/compose.dev.yml):
+[development Compose file](/compose-dev.yml):
 
 ```shell
-docker compose --file=compose.dev.yml up --build
+docker compose --file=compose-dev.yml up --build
 ```
 
 ### Acknowledgements

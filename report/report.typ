@@ -63,7 +63,7 @@ The back end is written in Go with Fiber. It uses PostgreSQL as the DBMS. The fr
 We've managed to get everything to work with Docker, which makes it easier to launch our application without installing many dependencies on your computer. The project can either be launched using our shell script (#text(fill: blue)[#link("https://github.com/Polinanime/sna25/blob/master/scripts/run-dev.sh")[`scripts/run-dev.sh`]]) or with the following command:
 
 ```sh
-docker compose --file=compose.dev.yml up --build
+docker compose --file=compose-dev.yml up --build
 ```
 
 In our CI/CD pipeline, we assess quality of our code using static analysis tools and upload images to DockerHub.
