@@ -44,6 +44,8 @@ Alternatively, you may simply launch the
 docker compose --file=compose-dev.yml up --build
 ```
 
+Then, the website should be available on http://localhost:80.
+
 ### Acknowledgements
 
 The SNA course mainly focuses on DevOps practices to maintain and deploy
