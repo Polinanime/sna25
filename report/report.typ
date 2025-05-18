@@ -21,11 +21,15 @@
 #table(
   columns: 3,
   [Mikhail Panteleev],
-  [#link("mailto:m.panteleev@innopolis.university")[#text(fill: blue)[m.panteleev\@innopolis.university]]],
+  [#link("mailto:m.panteleev@innopolis.university")[#text(
+        fill: blue,
+      )[m.panteleev\@innopolis.university]]],
   [B23-SD-01],
 
   [Asqar Arslanov],
-  [#link("mailto:a.arslanov@innopolis.university")[#text(fill: blue)[a.arslanov\@innopolis.university]]],
+  [#link("mailto:a.arslanov@innopolis.university")[#text(
+        fill: blue,
+      )[a.arslanov\@innopolis.university]]],
   [B23-SD-01],
 )
 
@@ -46,7 +50,7 @@ The deliverables of our project include:
 
 The SNA course mainly focuses on DevOps practices to maintain and deploy software applications rather than the arcitectural side of building software with code. For this reason, we’ve decided not to reinvent the wheel and build upon an existing open source foundation.
 
-The code for the back end has mostly been taken from #link("https://github.com/alpody/golang-fiber-realworld-example-app")[#text(fill: blue)[alpody/golang-fiber-realworld-example-app]]. The front end code originates from #link("https://github.com/yukicountry/realworld-nextjs-rsc")[#text(fill: blue)[yukicountry/realworld-nextjs-rsc]]. These implementations work well together (as all RealWorld implementations are supposed to).
+The code for the back end has mostly been taken from #link("https://github.com/dashhhik/realworld-fiber-sqlc")[#text(fill: blue)[dashhhik/realworld-fiber-sqlc]]. The front end code originates from #link("https://github.com/yukicountry/realworld-nextjs-rsc")[#text(fill: blue)[yukicountry/realworld-nextjs-rsc]]. These implementations work well together (as all RealWorld implementations are supposed to).
 
 The back end is written in Go with Fiber. It uses PostgreSQL as the DBMS. The front end is written in Next.js. It uses the pnpm package manager to make builds faster than with the "traditional" npm. Both services log incoming actions to the console.
 

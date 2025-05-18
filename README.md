@@ -58,7 +58,7 @@ for a social blogging website used for (a) learning to build
 (b) demonstrating capabilities of new technologies.
 
 The code for the back end has mostly been taken from
-[alpody/golang-fiber-realworld-example-app](https://github.com/alpody/golang-fiber-realworld-example-app).
+[dashhhik/realworld-fiber-sqlc](https://github.com/dashhhik/realworld-fiber-sqlc).
 The front end code originates from
 [yukicountry/realworld-nextjs-rsc](https://github.com/yukicountry/realworld-nextjs-rsc).
 These implementations work well together (as all RealWorld implementations are
