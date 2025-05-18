@@ -21,15 +21,11 @@
 #table(
   columns: 3,
   [Mikhail Panteleev],
-  [#link("mailto:m.panteleev@innopolis.university")[#text(
-        fill: blue,
-      )[m.panteleev\@innopolis.university]]],
+  [#link("mailto:m.panteleev@innopolis.university")[#text(fill: blue)[m.panteleev\@innopolis.university]]],
   [B23-SD-01],
 
   [Asqar Arslanov],
-  [#link("mailto:a.arslanov@innopolis.university")[#text(
-        fill: blue,
-      )[a.arslanov\@innopolis.university]]],
+  [#link("mailto:a.arslanov@innopolis.university")[#text(fill: blue)[a.arslanov\@innopolis.university]]],
   [B23-SD-01],
 )
 
@@ -88,6 +84,6 @@ Our work is published here:
 
 - Repository: #text(fill: blue)[https://github.com/Polinanime/sna25]
 - Deployed application: #text(fill: blue)[http://88.218.62.21:80]
-- Demo video: #text(fill: blue)[https://drive.google.com/drive/folders/1n5J5gUqOt6WDojwb-Eul0Ib4ZJ_c71Vw]
+- Demo video: #text(fill: blue)[https://drive.google.com/file/d/17iWMV7bnA27IKFvBYE_O5VE6OdVxLfYa/view]
 - Back end image: #text(fill: blue)[https://hub.docker.com/r/polinaanime/sna25-backend]
 - Front end image: #text(fill: blue)[https://hub.docker.com/r/polinaanime/sna25-frontend]
