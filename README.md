@@ -23,6 +23,11 @@ publish your own! You can think of it as a [Medium](https://medium.com) clone.
 The application is available on the web. Follow this link to use it:
 http://88.218.62.21:80.
 
+You can also use the Docker images separately.
+
+- Back end: https://hub.docker.com/r/polinaanime/sna25-backend
+- Front end: https://hub.docker.com/r/polinaanime/sna25-frontend
+
 ### Build Instructions
 
 To launch a development server, you can use the following
