@@ -1,7 +1,8 @@
 # Group Project Assignment
 
-![Golangci-lint](https://github.com/Polinanime/sna25/actions/workflows/backend-lint.yml/badge.svg)
-![ESLint](https://github.com/Polinanime/sna25/actions/workflows/eslint.yml/badge.svg)
+![](https://github.com/Polinanime/sna25/actions/workflows/docker-image.yaml/badge.svg)
+![](https://github.com/Polinanime/sna25/actions/workflows/backend-lint.yaml/badge.svg)
+![](https://github.com/Polinanime/sna25/actions/workflows/frontend-lint.yaml/badge.svg)
 
 [S25] System and Network Administration / Innopolis University
 

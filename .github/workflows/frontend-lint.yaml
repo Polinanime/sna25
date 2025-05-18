@@ -1,4 +1,4 @@
-name: ESLint
+name: Front End Lint
 on: push
 
 jobs:
