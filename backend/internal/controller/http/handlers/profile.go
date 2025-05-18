@@ -34,7 +34,6 @@ func (h *HandlerBase) GetProfile(c *fiber.Ctx) error {
 	}
 
 	return c.Status(200).JSON(fiber.Map{"profile": profile})
-
 }
 
 func (h *HandlerBase) Follow(c *fiber.Ctx) error {

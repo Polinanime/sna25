@@ -2,11 +2,12 @@ package handlers
 
 import (
 	"fmt"
+	"strconv"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/jackc/pgx/v5/pgtype"
 	"realworld-fiber-sqlc/internal/entity"
 	"realworld-fiber-sqlc/internal/usecase/repo/sqlc"
-	"strconv"
 )
 
 func (h *HandlerBase) CreateComment(c *fiber.Ctx) error {
@@ -43,7 +44,6 @@ func (h *HandlerBase) CreateComment(c *fiber.Ctx) error {
 			Following: comment.Following,
 		},
 	}})
-
 }
 
 func (h *HandlerBase) DeleteComment(c *fiber.Ctx) error {

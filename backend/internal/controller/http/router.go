@@ -9,25 +9,24 @@ import (
 )
 
 func Setup(app *fiber.App, dbQueries sqlc.Querier, l logger.Interface) {
-
 	handlerBase := handlers.NewHandlerQ(dbQueries, l)
 	api := app.Group("/api")
 
-	//auth
+	// auth
 	users := api.Group("/users")
 	users.Post("/login", handlerBase.Login)
 	users.Post("/", handlerBase.Register)
 
-	//user
+	// user
 	user := api.Group("/user")
 	user.Get("/", middleware.Protected(), handlerBase.CurrentUser)
 	user.Put("/", middleware.Protected(), handlerBase.UpdateProfile)
 
-	//profiles
+	// profiles
 	profilesRoute := api.Group("/profiles")
 	profilesRoute.Get("/:username", handlerBase.GetProfile)
 
-	//follow
+	// follow
 	profilesRoute.Post("/:username/follow", middleware.Protected(), handlerBase.Follow)
 	profilesRoute.Delete("/:username/follow", middleware.Protected(), handlerBase.Unfollow)
 
@@ -40,13 +39,13 @@ func Setup(app *fiber.App, dbQueries sqlc.Querier, l logger.Interface) {
 	articlesRoute.Put("/:slug", middleware.Protected(), handlerBase.UpdateArticle)
 	articlesRoute.Delete("/:slug", middleware.Protected(), handlerBase.DeleteArticle)
 
-	//comments
+	// comments
 	commentsRoute := articlesRoute.Group("/:slug/comments")
 	commentsRoute.Post("/", middleware.Protected(), handlerBase.CreateComment)
 	commentsRoute.Get("/", handlerBase.GetComments)
 	commentsRoute.Delete("/:id", middleware.Protected(), handlerBase.DeleteComment)
 
-	//ffv
+	// ffv
 	app.Post("/api/articles/:slug/favorite", middleware.Protected(), handlerBase.FavoriteArticle)
 	app.Delete("/api/articles/:slug/favorite", middleware.Protected(), handlerBase.UnfavoriteArticle)
 

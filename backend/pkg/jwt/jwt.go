@@ -2,8 +2,9 @@ package jwt2
 
 import (
 	"fmt"
-	"github.com/golang-jwt/jwt/v5"
 	"time"
+
+	"github.com/golang-jwt/jwt/v5"
 )
 
 var JwtKey = []byte("your_secret_key")
@@ -17,7 +18,6 @@ func GenerateToken(userID int64) (string, error) {
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 	tokenString, err := token.SignedString(JwtKey)
-
 	if err != nil {
 		return "", err
 	}

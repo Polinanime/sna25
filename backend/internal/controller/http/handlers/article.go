@@ -1,11 +1,12 @@
 package handlers
 
 import (
+	"strings"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/jackc/pgx/v5/pgtype"
 	"realworld-fiber-sqlc/internal/entity"
 	"realworld-fiber-sqlc/internal/usecase/repo/sqlc"
-	"strings"
 )
 
 func formTagList(tagList interface{}) []string {
@@ -176,7 +177,6 @@ func (h *HandlerBase) UpdateArticle(c *fiber.Ctx) error {
 			Following: false,
 		},
 	}})
-
 }
 
 func (h *HandlerBase) DeleteArticle(c *fiber.Ctx) error {
@@ -376,7 +376,6 @@ func (h *HandlerBase) GetArticles(c *fiber.Ctx) error {
 	}
 
 	return c.Status(200).JSON(fiber.Map{"articles": articles, "articlesCount": cnt})
-
 }
 
 func (h *HandlerBase) Feed(c *fiber.Ctx) error {
@@ -432,5 +431,4 @@ func (h *HandlerBase) Feed(c *fiber.Ctx) error {
 	}
 
 	return c.Status(200).JSON(fiber.Map{"articles": articles, "articlesCount": cnt})
-
 }

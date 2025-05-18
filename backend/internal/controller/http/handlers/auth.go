@@ -2,14 +2,16 @@ package handlers
 
 import (
 	"context"
+	"net/mail"
+	"strconv"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v5"
-	"net/mail"
+
 	"realworld-fiber-sqlc/internal/entity"
 	sqlc2 "realworld-fiber-sqlc/internal/usecase/repo/sqlc"
 	"realworld-fiber-sqlc/pkg/hash"
 	jwt2 "realworld-fiber-sqlc/pkg/jwt"
-	"strconv"
 )
 
 func validEmail(email string) bool {

@@ -1,15 +1,17 @@
 package test
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/stretchr/testify/assert"
 	"io"
 	"net/http"
+	"testing"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/stretchr/testify/assert"
+
 	"realworld-fiber-sqlc/internal/controller/http"
 	"realworld-fiber-sqlc/internal/usecase/repo"
 	sqlc2 "realworld-fiber-sqlc/internal/usecase/repo/sqlc"
 	"realworld-fiber-sqlc/pkg/logger"
-	"testing"
 )
 
 func mockUserIDFromToken(c *fiber.Ctx) int64 {
